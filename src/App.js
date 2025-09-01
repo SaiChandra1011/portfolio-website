@@ -45,27 +45,27 @@ function App() {
         { name: "Tableau", class: "tableau" }
       ],
       github: "https://github.com/SaiChandra1011/data-warehouse-project",
-      live: "#"
+      live: "https://public.tableau.com/app/profile/bommena.rao/viz/DataWarehouseDashboard_17559485026570/Dashboard1?publish=yes"
     },
     
   
     {
-      title: "Weather Forecast App",
-      description: "A beautiful weather application with location-based forecasts, interactive maps, and severe weather alerts.",
+      title: "Wallmart ETL Pipeline",
+      description: "Extracted data using the Kaggle API, transformed it with Pandas, created views, and built visualizations in Tableau using those views.",
       tech: [
-        { name: "React Native", class: "react" },
-        { name: "Weather API", class: "api" },
-        { name: "Maps SDK", class: "" },
-        { name: "Push Notifications", class: "" }
+        { name: "Postgres", class: "postgres" },
+        { name: "Pandas", class: "pandas" },
+        { name: "Tableau", class: "tableau" }
+       
       ],
-      github: "#",
-      live: "#"
+      github: "https://github.com/SaiChandra1011/Walmart_ETL",
+      live: "https://public.tableau.com/app/profile/bommena.rao/viz/WalmartCustomerSalesInsights/Dashboard1?publish=yes"
     }
   ];
 
   const skills = [
     "OOP", "DBMS", "C++", "Python", "Java", "Azure", "SQL", "PostgreSQL", 
-"Linux", "Git/GitHub", "Databricks", "Tableau", "PySpark", "Docker", "Snowflake"
+"Linux", "Git/GitHub", "Databricks", "Tableau", "PySpark", "Docker"
 
   ];
 
@@ -96,6 +96,10 @@ function App() {
       url: "https://learn.microsoft.com/api/credentials/share/en-us/BommenaSaiChandraVardhanRao-6356/C12168E0EA8EA40E?sharingId=450A5DB9CDA7E64E"
     },
     {
+      title: "Azure Data Fundamentals Cloud Certification",
+      url: "https://learn.microsoft.com/api/credentials/share/en-us/BommenaSaiChandraVardhanRao-6356/AA139AB76DC6707D?sharingId=450A5DB9CDA7E64E"
+    },
+    {
       title: "Probability and Statistics from IIT Kharagpur",
       url: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23MA24S5333049104248487"
     },
@@ -112,7 +116,7 @@ function App() {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';  // Path to your resume PDF in the public folder
+    link.href = '/Resume_1.pdf'; 
     link.download = 'Sai_Chandra_Resume.pdf';
     document.body.appendChild(link);
     link.click();
