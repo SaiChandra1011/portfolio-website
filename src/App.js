@@ -64,8 +64,9 @@ function App() {
   ];
 
   const skills = [
-    "OOP", "DBMS", "C++", "Python", "Java", "Azure", "SQL", "PostgreSQL", 
-"Linux", "Git/GitHub", "Databricks", "Tableau", "PySpark", "Docker"
+    "OOP", "DBMS", "C++", "Python", "Java", "Azure", "Databricks", "SQL", 
+    "PostgreSQL", "MySQL", "Linux", "Git/Github/Gitlab", "Tableau", "Pyspark",
+     "FastAPI", "Postman", "Docker"
 
   ];
 
@@ -83,9 +84,9 @@ function App() {
         { name: "Python", class: "python" }
       ],
       description: [
-        "Worked on Python use cases during training, where I applied core concepts to solve practical problems and build small-scale solutions for the team.",
-        "Underwent hands on training in Azure Cloud, PySpark, and Databricks, gaining exposure to cloud services, big data processing, and data engineering workflows.",
-        "Collaborated with the team on an ELT task in Databricks, contributing to the processing and transformation of JSON data files into a structured format for analysis."
+        "Collaborated with teammate on an ELT pipeline in Databricks, where I ingested JSON files into the bronze layer and performed basic data cleaning in the silver layer, contributed to building analytics views in the gold layer, such as monthly request summaries, while gaining hands-on experience with the Databricks platform and Unity Catalog for data governance and management.",
+        "Assigned to design the database schema for an internal tool that tracks employee certifications and training progress, developed and structured MySQL tables, ensuring data integrity and scalability.",
+        "Built CRUD APIs for trainings and providers schema in the application using FastAPI, performed API testing on the application using Postman, validating request and response structures and error handling scenarios to ensure functionality, and optimized test cases which helped reduce API response time by 15%."
       ]
     }
   ];
@@ -116,7 +117,7 @@ function App() {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Resume_1.pdf'; 
+    link.href = '/RESUME.pdf'; 
     link.download = 'Sai_Chandra_Resume.pdf';
     document.body.appendChild(link);
     link.click();
